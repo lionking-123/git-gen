@@ -32,4 +32,5 @@ To create the SSH keys, type ssh-keygen -t rsa -C "your_email@example.com". This
 Now, go and open id_rsa.pub in your favorite text editor (you can do this via Windows Explorer or the OSX Finder if you like, typing open . will open the folder).
 Copy the contents--exactly as it appears, with no extra spaces or lines--of id_rsa.pub and paste it into GitHub and/or BitBucket under the Account Settings > SSH Keys. NOTE: I like to give the SSH key a descriptive name, usually with the name of the workstation I'm on along with the date.
 Now that you've added your public key to Github and/or BitBucket, try to git push again and see if it works. It should!
-More help available from GitHub on creating SSH Keys and BitBucket Help.
+More help available from GitHub on creating SSH Keys and BitBucket Help.Contribution: 2020-11-20 20:00
+

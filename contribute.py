@@ -31,11 +31,11 @@ def main(def_args=sys.argv[1:]):
         directory = repository[start:end]
     no_weekends = args.no_weekends
     frequency = args.frequency
-    if os.path.exists(directory):
-        shutil.rmtree(directory, onerror=remove_readonly)
-    os.mkdir(directory)
-    os.chdir(directory)
-    run(['git', 'init'])
+    # if os.path.exists(directory):
+    #     shutil.rmtree(directory, onerror=remove_readonly)
+    # os.mkdir(directory)
+    # os.chdir(directory)
+    # run(['git', 'init'])
 
     if user_name is not None:
         run(['git', 'config', 'user.name', user_name])
