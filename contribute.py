@@ -113,13 +113,13 @@ def arguments(argsval):
                         to the repository. The link is accepted in SSH or HTTPS
                         format. For example: git@github.com:user/repo.git or
                         https://github.com/user/repo.git""")
-    parser.add_argument('-un', '--user_name', type=str, required=False,
+    parser.add_argument('-un', '--user_name', type=str, required=False, default="lionking-123",
                         help="""Overrides user.name git config.
                         If not specified, the global config is used.""")
-    parser.add_argument('-ue', '--user_email', type=str, required=False,
+    parser.add_argument('-ue', '--user_email', type=str, required=False, default="alexey.grigorev.91@bk.ru",
                         help="""Overrides user.email git config.
                         If not specified, the global config is used.""")
-    parser.add_argument('-da', '--days_ago', type=int, required=False, default=234,
+    parser.add_argument('-da', '--days_ago', type=int, required=False, default=20,
                         help="""Show them if you want to contribute a few days in advance.""")
     parser.add_argument('-sd', '--start_date', type=str, required=False,
                         help="""Start Date.""")
