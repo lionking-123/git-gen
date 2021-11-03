@@ -93,7 +93,7 @@ def contributions_per_day(args):
 def arguments(argsval):
     parser = argparse.ArgumentParser()
     parser.add_argument('-nw', '--no_weekends',
-                        required=False, action='store_true', default=False,
+                        required=False, action='store_true', default=True,
                         help="""do not commit on weekends""")
     parser.add_argument('-mc', '--max_commits', type=int, default=7,
                         required=False, help="""Defines the maximum amount of
@@ -102,7 +102,7 @@ def arguments(argsval):
                         from 1 to N times a day. The exact number of commits
                         is defined randomly for each day. The default value
                         is 10.""")
-    parser.add_argument('-fr', '--frequency', type=int, default=80,
+    parser.add_argument('-fr', '--frequency', type=int, default=75,
                         required=False, help="""Percentage of days when the
                         script performs commits. If N is specified, the script
                         will commit N%% of days in a year. The default value
@@ -119,7 +119,7 @@ def arguments(argsval):
     parser.add_argument('-ue', '--user_email', type=str, required=False, default="alexey.grigorev.91@bk.ru",
                         help="""Overrides user.email git config.
                         If not specified, the global config is used.""")
-    parser.add_argument('-da', '--days_ago', type=int, required=False, default=25,
+    parser.add_argument('-da', '--days_ago', type=int, required=False, default=575,
                         help="""Show them if you want to contribute a few days in advance.""")
     parser.add_argument('-sd', '--start_date', type=str, required=False,
                         help="""Start Date.""")
